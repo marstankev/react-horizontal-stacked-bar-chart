@@ -220,5 +220,5 @@ HorizontalBar.defaultProps = {
   outlineColor: "black",
   fontColor: "white",
   id: "hsbar",
-  textAlign: "left"
+  textAlign: "center"
 };
