@@ -132,7 +132,7 @@ export default class HorizontalBar extends Component {
             />
             {(this.props.showTextIn || this.props.showValueIn) && (
               <text
-                style={{ fill: this.props.fontColor, fontSize: "90%" }}
+                style={{ fill: this.props.fontColor[index], fontSize: "90%" }}
                 x={
                   this.props.outlineWidth > 0
                     ? `${bar.position +
@@ -200,7 +200,7 @@ HorizontalBar.propTypes = {
   showValueIn: PropTypes.bool,
   showValueUp: PropTypes.bool,
   showValueDown: PropTypes.bool,
-  fontColor: PropTypes.string,
+  fontColors: PropTypes.arrayOf(PropTypes.string),
   onClick: PropTypes.func,
   outlineWidth: PropTypes.number,
   outlineColor: PropTypes.string,
@@ -218,7 +218,7 @@ HorizontalBar.defaultProps = {
   showValueDown: false,
   outlineWidth: 0,
   outlineColor: "black",
-  fontColor: "white",
+  fontColors: ["white"],
   id: "hsbar",
   textAlign: "center"
 };

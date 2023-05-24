@@ -73,10 +73,10 @@ Complete
 - showValueIn: PropTypes.bool
 - showValueUp: PropTypes.bool
 - showValueDown: PropTypes.bool
-- fontColor: PropTypes.string
+- fontColors: PropTypes.string
 - onClick: PropTypes.func
 - outlineWidth: PropTypes.number
-- outlineColor: PropTypes.string
+- outlineColor: PropTypes.arrayOf(PropTypes.string)
 - textAlign: PropTypes.string
 
 ### Default Properties
@@ -89,7 +89,7 @@ Complete
 - showValueIn: false
 - showValueUp: false
 - showValueDown: false
-- fontColor: "white"
+- fontColors: ["white"]
 - outlineWidth: 0
 - outlineColor: "black"
 - id: "hsbar"
