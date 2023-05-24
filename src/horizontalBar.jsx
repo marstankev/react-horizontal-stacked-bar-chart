@@ -164,7 +164,7 @@ export default class HorizontalBar extends Component {
       <div
         id={`${this.props.id}_text`}
         style={{
-          textAlign: "left",
+          textAlign: this.props.textAlign,
           display: "flex",
           width: "100%"
         }}
@@ -203,7 +203,8 @@ HorizontalBar.propTypes = {
   fontColor: PropTypes.string,
   onClick: PropTypes.func,
   outlineWidth: PropTypes.number,
-  outlineColor: PropTypes.string
+  outlineColor: PropTypes.string,
+  textAlign: PropTypes.string
 };
 
 HorizontalBar.defaultProps = {
@@ -218,5 +219,6 @@ HorizontalBar.defaultProps = {
   outlineWidth: 0,
   outlineColor: "black",
   fontColor: "white",
-  id: "hsbar"
+  id: "hsbar",
+  textAlign: "left"
 };

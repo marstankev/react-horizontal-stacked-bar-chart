@@ -1,6 +1,6 @@
 {
-  "name": "react-horizontal-stacked-bar-chart",
-  "version": "8.15.2",
+  "name": "@marstankev/react-horizontal-stacked-bar-chart",
+  "version": "8.16.0",
   "description": "React horizontal stacked bar responsive chart component",
   "keywords": [
     "stacked-chart",
@@ -14,7 +14,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/ricardodorosario/react-horizontal-stacked-bar-chart.git"
+    "url": "https://github.com/marstankev/react-horizontal-stacked-bar-chart.git"
   },
   "license": "MIT",
   "main": "umd/hsbar.min.js",

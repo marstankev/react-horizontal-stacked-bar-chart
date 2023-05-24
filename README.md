@@ -77,6 +77,7 @@ Complete
 - onClick: PropTypes.func
 - outlineWidth: PropTypes.number
 - outlineColor: PropTypes.string
+- textAlign: PropTypes.string
 
 ### Default Properties
 
@@ -92,6 +93,7 @@ Complete
 - outlineWidth: 0
 - outlineColor: "black"
 - id: "hsbar"
+- textAlign: "left"
 
 ### Data object list
 
