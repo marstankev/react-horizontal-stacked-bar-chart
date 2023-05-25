@@ -88,12 +88,13 @@ export default class HorizontalBar extends Component {
    * Returns a list of texts of the bars into a div component
    */
   getListTextBar(showTextInsteadValue) {
-    const { showTextWithValue } = this.props;
+    const { showTextWithValue, fontColors } = this.props;
     const listText = this.state.listBars.map((bar, index) => {
       return (
         <div
           key={index}
           style={{
+            color: fontColors[index],
             position: "relative",
             float: "left",
             width: `${bar.barWidth}%`,
