@@ -132,7 +132,7 @@ export default class HorizontalBar extends Component {
             />
             {(this.props.showTextIn || this.props.showValueIn) && (
               <text
-                style={{ fill: this.props.fontColor[index], fontSize: "90%" }}
+                style={{ fill: this.props.fontColors[index], fontSize: "90%" }}
                 x={
                   this.props.outlineWidth > 0
                     ? `${bar.position +

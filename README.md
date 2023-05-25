@@ -42,7 +42,7 @@ Complete
   outlineWidth: {0.5},
   outlineColor: "black"
   id="new_id"
-  fontColor="rgb(50,20,100)"
+  fontColors=["rgb(50,20,100)"]
   data={[
     {
       name: "To pay",
@@ -73,7 +73,7 @@ Complete
 - showValueIn: PropTypes.bool
 - showValueUp: PropTypes.bool
 - showValueDown: PropTypes.bool
-- fontColors: PropTypes.string
+- fontColors: PropTypes.arrayOf(PropTypes.string),
 - onClick: PropTypes.func
 - outlineWidth: PropTypes.number
 - outlineColor: PropTypes.arrayOf(PropTypes.string)
