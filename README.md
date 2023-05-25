@@ -89,7 +89,7 @@ Complete
 - showValueIn: false
 - showValueUp: false
 - showValueDown: false
-- fontColors: ["white"]
+- fontColors: []
 - outlineWidth: 0
 - outlineColor: "black"
 - id: "hsbar"

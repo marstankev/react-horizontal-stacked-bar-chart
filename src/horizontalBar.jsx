@@ -89,17 +89,23 @@ export default class HorizontalBar extends Component {
    */
   getListTextBar(showTextInsteadValue) {
     const { showTextWithValue, fontColors } = this.props;
+
     const listText = this.state.listBars.map((bar, index) => {
+      const textStyle = {
+        position: "relative",
+        float: "left",
+        width: `${bar.barWidth}%`,
+        fontSize: "90%"
+      }
+  
+      if (fontColors && fontColors[index]) {
+        textStyle.color = fontColors[index];
+      }
+
       return (
         <div
           key={index}
-          style={{
-            color: fontColors[index],
-            position: "relative",
-            float: "left",
-            width: `${bar.barWidth}%`,
-            fontSize: "90%"
-          }}
+          style={textStyle}
           onClick={e => this.onClick(e, bar)}
         >
           {showTextInsteadValue && bar.name}
@@ -219,7 +225,7 @@ HorizontalBar.defaultProps = {
   showValueDown: false,
   outlineWidth: 0,
   outlineColor: "black",
-  fontColors: ["white"],
+  fontColors: [],
   id: "hsbar",
   textAlign: "center"
 };
